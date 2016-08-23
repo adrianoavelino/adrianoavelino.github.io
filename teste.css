@@ -17,7 +17,7 @@ body {
   position: fixed;
   background-color: #fff;
   width: 100%;
-  z-index: 3;
+  z-index: 5;
   min-height: 50px;
   box-shadow: 0 1px 10px #ddd;
   padding: .5em;
@@ -112,6 +112,11 @@ body {
   color: #888;
 }
 
+#toggle {
+  display: none;
+}
+
+
 .toggleclose {
   display: none;
 }
@@ -129,7 +134,7 @@ body {
 
 h2 {
   height: 105px;
-  text-align: left;
+  text-align: center;
   color: #888;
   line-height: 185px;
 }
@@ -144,17 +149,32 @@ h2 {
 }*/
 
 
-#toggle {
-  display: none;
+/* ABOUT */
+
+.header {
+  z-index: 6;
+}
+
+.avatar {
+  border-radius: 50%;
+  transform: rotate(-30deg);
+  margin-top: 20%;
+  //essa duas linhas servem para não sobrepor o zindex do header
+  z-index: 0;
+  position: relative;
 }
 
 
 @media (max-width: 767px) {
+
+  .avatar {
+    /*z-index: 0;*/
+  }
   .box,
   .logo,
   .title,
   .toggle {
-    z-index: 0;
+    z-index: 1;
   }
 
   body {
