@@ -9,8 +9,6 @@ body {
   width: 100%;
   height: 43em;
   background-color: #eee;
-  /*z-index: 2;*/
-
 }
 
 .box {
@@ -21,7 +19,6 @@ body {
   min-height: 50px;
   box-shadow: 0 1px 10px #ddd;
   padding: .5em;
-
 }
 
 .center {
@@ -124,6 +121,7 @@ body {
 .content {
   margin: auto;
   max-width: 900px;
+  color: #555;
 }
 
 .about,
@@ -139,9 +137,6 @@ h2 {
   line-height: 185px;
 }
 
-.content {
-  color: #555;
-}
 
 /*body {
   font-family: "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -155,17 +150,19 @@ h2 {
   z-index: 6;
 }
 
-.avatar {
-  border-radius: 50%;
-  transform: rotate(-30deg);
-  margin-top: 20%;
-  //essa duas linhas servem para não sobrepor o zindex do header
-  z-index: 0;
-  position: relative;
+.half {
+  text-align: center;
 }
 
+.avatar {
+  border-radius: 50%;
+  opacity: .7;
+}
 
 @media (max-width: 767px) {
+  body {
+    /*background-color: green;*/
+  }
 
   .avatar {
     /*z-index: 0;*/
@@ -252,6 +249,10 @@ h2 {
 
   }
 
+  .portifolio img {
+    width: 90%;
+    margin-bottom: 5%;
+  }
 
 
   .logo {
