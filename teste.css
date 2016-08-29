@@ -156,8 +156,49 @@ h2 {
 
 .avatar {
   border-radius: 50%;
-  opacity: .7;
+  opacity: .8;
+  border: 7px solid #ddd;
 }
+
+/* CONTACT */
+.social-media {
+  text-align: center;
+}
+
+.social-media a {
+  text-decoration: none;
+  transition: all .3s linear;
+}
+
+.social-media a:hover {
+  opacity: .5;
+  /*border: 1px solid #ddd;*/
+}
+
+.social-media__facebook {
+  color: #2b3990;
+}
+
+.social-media__twetter {
+  color: #27aae1;
+}
+
+.social-media__github {
+  color: #000;
+}
+
+.social-media__plus {
+  color: #da1e2c;
+}
+
+.social-media__stackoverflow {
+  color: #2b3990;
+}
+
+.social-media__codepen {
+  color: #2b3990;
+}
+
 
 @media (max-width: 767px) {
   body {
