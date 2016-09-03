@@ -179,6 +179,7 @@ h2 {
 
 .half {
   text-align: center;
+  overflow: hidden;
 }
 
 .avatar {
