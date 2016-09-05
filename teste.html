@@ -141,7 +141,7 @@
   <script src="./lib/jquery-2.2.4.min.js"></script>
   <script>
   $(document).ready(function () {
-    $("a").click(function (event) {
+    $(".navbar a").click(function (event) {
       event.preventDefault();
       $("html, body").animate({scrollTop:$(this.hash).offset().top}, 800);
       $("input").attr("checked", false);
