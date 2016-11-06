@@ -4,17 +4,20 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="./lib/normalize.css">
+  <!-- <link rel="stylesheet" href="./lib/normalize.css">
   <link rel="stylesheet" href="./lib/skeleton.css">
-  <link rel="stylesheet" href="./bower_components/font-awesome/css/font-awesome.css">
-  <link rel="stylesheet" href="./teste.css">
+  <link rel="stylesheet" href="./lib/css/font-awesome.min.css"> -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="./style.css">
   <title>..:Portifólio - Chalenge Free Code Camp:..</title>
 </head>
 <body>
-  <header class="header">
+  <header class="header" id="header">
     <div class="box">
       <div class="center">
-        <a href="./teste.html">
+        <a href="#header">
           <div class="logo">
             <div class="icon">[-]</div>
             <div class="title"></div>
@@ -139,19 +142,8 @@
         Feito com <i class="fa fa-heart"></i> por Adriano Avelino
     </section>
   </footer>
-  <script src="./lib/jquery-2.2.4.min.js"></script>
-  <script>
-  $(document).ready(function () {
-    $(".navbar a").click(function (event) {
-      event.preventDefault();
-      $("html, body").animate({scrollTop:$(this.hash).offset().top}, 800);
-      $("input").attr("checked", false);
-    });
-
-    $(".toggleclose").click(function(){
-      $("input").attr("checked", false);
-    });
-  });
-  </script>
+  <!-- <script src="./lib/jquery-2.2.4.min.js"></script> -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+  <script src="./script.js"></script>
 </body>
 </html>
