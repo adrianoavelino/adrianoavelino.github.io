@@ -1,5 +1,5 @@
 {
-  "name": "Portifolio",
+  "name": "portifolio",
   "version": "1.0.0",
   "description": "Portifolio do site Freecode Camp",
   "main": "index.html",
@@ -9,8 +9,8 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "browser-sync": "^2.13.0",
-    "gulp": "^3.9.1"
+    "browser-sync": "^2.26.13",
+    "gulp": "^4.0.2"
   },
   "dependencies": {
     "fontawesome": "^4.5.0"

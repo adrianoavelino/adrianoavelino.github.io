@@ -1,15 +1,15 @@
-var gulp        = require('gulp');
-var browserSync = require('browser-sync').create();
+const gulp  = require('gulp');
+const browserSync = require('browser-sync').create();
+const reload      = browserSync.reload;
 
-// Static Server + watching scss/html files
-gulp.task('serve', function() {
+function server() {
+  browserSync.init({
+      server: "./"
+  });
 
-    browserSync.init({
-        server: "./"
-    });
+  gulp.watch("*.css").on('change', reload);
+  gulp.watch("*.html").on('change', reload);
+}
 
-    gulp.watch("*.css").on('change', browserSync.reload);
-    gulp.watch("*.html").on('change', browserSync.reload);
-});
-
-gulp.task('default', ['serve']);
+exports.server = gulp.series(server);
+exports.default = gulp.series(server);
