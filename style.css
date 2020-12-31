@@ -5,39 +5,30 @@ body {
   padding: 0;
 }
 
-.header {
-  width: 100%;
-  height: 43em;
-  background-color: #eee;
-}
-
-.box {
-  position: fixed;
-  background-color: #fff;
-  width: 100%;
-  z-index: 5;
-  min-height: 50px;
-  box-shadow: 0 1px 10px #ddd;
-  padding: .5em;
-}
-
-.center {
+.container {
   max-width: 900px;
   margin: auto;
+}
+
+/* HEADER */
+.header {
+  height: 35em;
   background-color: #fff;
 }
 
-.logo {
-  position: absolute;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-  background-color: #fff;
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 70px;
+}
+
+.navbar__logo {
+  text-decoration: none;
   float: left;
-  width: 250px;
-  height: 50px;
 }
 
-.icon {
+.navbar__logo .icon {
   background-color: #888;
   width: 50px;
   text-align: center;
@@ -50,7 +41,7 @@ body {
   display: inline-block;
 }
 
-.title {
+.navbar__logo .title {
   text-align: left;
   display: inline-block;
   line-height: 50px;
@@ -61,20 +52,16 @@ body {
   font-size: 1.7em;
 }
 
-.title::after {
+.navbar__logo .title::after {
   content: ' Avelino';
 }
 
-.title::before {
+.navbar__logo .title::before {
   content: 'Adriano';
 }
 
-.navbar {
+.navbar__links {
   float: right;
-  background-color: #fff;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-  margin-right: 2%;
 }
 
 .navbar a {
@@ -96,6 +83,18 @@ body {
   background-color: #fff;
 }
 
+.header__bg {
+  color: #000;
+  background: #ddd url("./img/building.jpg") bottom center;
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-attachment: fixed;
+  opacity: .8;
+  min-height: 100%;
+  display: flex;
+  align-items: center;
+}
+
 .toggle {
   position: absolute;
   right: .3em;
@@ -115,22 +114,7 @@ body {
   display: none;
 }
 
-.header__bg {
-  opacity: .8;
-  color: #000;
-  background: #ddd url("./img/building.jpg") bottom center;
-  -webkit-background-size: cover;
-  background-size: cover;
-  background-attachment: fixed;
-  width: 100%;
-  height: 100%;
-  position: relative;
-}
-
 .header__text {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-60%);
   font-family: Georgia, serif;
   font-style: italic;
   color: #fff;
@@ -174,10 +158,6 @@ h2 {
 }
 
 /* ABOUT */
-.header {
-  z-index: 6;
-}
-
 .half {
   text-align: center;
   overflow: hidden;
