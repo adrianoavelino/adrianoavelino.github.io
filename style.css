@@ -13,13 +13,19 @@ body {
 /* HEADER */
 .header {
   background-color: #fff;
+  box-shadow: 0 5px 10px #ddd;
+  
 }
 
 .navbar {
+  box-shadow: 0 5px 10px #ddd;
+}
+
+.navbar__body {
+  height: 70px;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 70px;
 }
 
 .navbar__logo {
