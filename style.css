@@ -65,10 +65,6 @@ body {
   content: 'Adriano';
 }
 
-.navbar__links {
-  float: right;
-}
-
 .navbar a {
   display: inline-block;
   min-width: 50px;
