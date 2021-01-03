@@ -146,16 +146,14 @@ blockquote:before {
 .about,
 .portifolio,
 .contact {
-  padding:  2em 1em;
   text-align: center;
 }
 
 .content h2 {
-  height: 105px;
   text-align: center;
   color: #888;
-  line-height: 185px;
   font-size: 2.5em;
+  margin-bottom: .5em;
 }
 
 /* ABOUT */
